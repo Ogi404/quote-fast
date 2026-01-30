@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run build)",
+      "Bash(npm test)",
+      "Bash(npm run test *)",
+      "Bash(npm run verify)",
+      "Bash(git status*)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit*)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(git tag*)",
+      "Bash(git reset*)",
+      "Bash(git rebase*)",
+      "Bash(rm *)",
+      "Bash(del *)",
+      "Bash(rd *)",
+      "Bash(rmdir *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(**/id_rsa*)",
+      "Read(**/*.pem)",
+      "Read(**/*.p12)",
+      "Read(**/*secret*)"
+    ]
+  },
+  "attribution": {
+    "commit": "🤖 Generated with Claude Code",
+    "pr": ""
+  }
+}
