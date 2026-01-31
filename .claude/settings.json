@@ -36,5 +36,8 @@
   "attribution": {
     "commit": "🤖 Generated with Claude Code",
     "pr": ""
+  },
+  "enabledPlugins": {
+    "ralph-wiggum@claude-plugins-official": true
   }
 }
