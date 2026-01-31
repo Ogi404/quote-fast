@@ -25,6 +25,12 @@
 - Ask before destructive commands.
 - Ask before `git push`.
 
+## Plugins
+- This repo enables the **Ralph Wiggum** plugin via `.claude/settings.json`.
+- Start: `/ralph-loop "<prompt>" --completion-promise "<TEXT>" --max-iterations <N>`
+- Stop: `/cancel-ralph`
+- Rule: always set `--max-iterations` and use a unique completion promise.
+
 ## Notes
 - Prefer explicit file lists in prompts.
 - Use `/compact` regularly.
