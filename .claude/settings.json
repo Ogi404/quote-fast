@@ -1,6 +1,9 @@
 {
+  "attribution": {
+    "commit": "🤖 Generated with Claude Code",
+    "pr": ""
+  },
   "permissions": {
-    "defaultMode": "plan",
     "allow": [
       "Bash(npm run lint)",
       "Bash(npm run build)",
@@ -13,6 +16,15 @@
       "Bash(git add *)",
       "Bash(git commit*)"
     ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(**/id_rsa*)",
+      "Read(**/*.pem)",
+      "Read(**/*.p12)",
+      "Read(**/*secret*)"
+    ],
     "ask": [
       "Bash(git push*)",
       "Bash(git tag*)",
@@ -23,21 +35,9 @@
       "Bash(rd *)",
       "Bash(rmdir *)"
     ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)",
-      "Read(./secrets/**)",
-      "Read(**/id_rsa*)",
-      "Read(**/*.pem)",
-      "Read(**/*.p12)",
-      "Read(**/*secret*)"
-    ]
-  },
-  "attribution": {
-    "commit": "🤖 Generated with Claude Code",
-    "pr": ""
+    "defaultMode": "plan"
   },
   "enabledPlugins": {
-    "ralph-wiggum@claude-plugins-official": true
+    "ralph-wiggum@claude-code-plugins": true
   }
 }
